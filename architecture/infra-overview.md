@@ -22,7 +22,7 @@ Expand into automation, cloud infrastructure, and DevOps.
 
 ## **2. Physical Network Architecture**
 
-Network topology: Also refer to [Home-network](proxmox-homelab-infra/architecture/Home-network.jpg)
+Network topology: Also refer to [Home-network](Home-network.jpg)
 
 The physical network follows this topology:
 
