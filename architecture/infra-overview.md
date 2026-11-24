@@ -30,8 +30,7 @@ The physical network follows this topology:
                      |
                   ISP Router
                      |
-                  FortiGate
-                   Firewall
+                  Firewall
                      |
                  Network Switch
                      |
