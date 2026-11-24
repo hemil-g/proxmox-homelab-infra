@@ -1,8 +1,8 @@
 # **Objective: Isolate different workloads using VLAN-based network segmentation**
 
-###Physical switch configured to carry multiple VLANs.
-Proxmox connected through a VLAN trunk.
-VLAN-aware virtual bridge.
-Individual VM/LXC interfaces assigned to appropriate VLANs.
-Inter-VLAN traffic controlled by the firewall.###
+###Physical switch configured to carry multiple VLANs.###
+###Proxmox connected through a VLAN trunk.###
+###VLAN-aware virtual bridge.###
+###Individual VM/LXC interfaces assigned to appropriate VLANs.###
+###Inter-VLAN traffic controlled by the firewall.###
 
