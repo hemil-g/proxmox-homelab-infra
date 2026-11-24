@@ -1,2 +1,2 @@
-# proxmox-homelab-infra
+# proxmox-infra
 Welcome to LABWORLD
