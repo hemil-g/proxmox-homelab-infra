@@ -4,5 +4,5 @@
 ### Proxmox connected through a VLAN trunk.
 ### VLAN-aware virtual bridge.
 ### Individual VM/LXC interfaces assigned to appropriate VLANs.
-### Inter-VLAN traffic controlled by the firewall.
+### Inter-VLAN traffic controlled by the firewall policiesand role based access(RBAC). #Not shown due to security reasons
 
