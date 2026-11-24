@@ -22,7 +22,7 @@ Expand into automation, cloud infrastructure, and DevOps.
 
 ## **2. Physical Network Architecture**
 
-Network topology
+Network topology: Also refer to [Home network]()
 
 The physical network follows this topology:
 
