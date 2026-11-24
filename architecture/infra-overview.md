@@ -1,6 +1,6 @@
 # Homelab Infrastructure – Architecture Overview
 
-##**1. Project Overview**
+## **1. Project Overview**
 
 This project documents my personal homelab infrastructure, built to gain hands-on experience in network engineering, cybersecurity, virtualization, Linux administration, containerization, and self-hosted services.
 
@@ -20,7 +20,7 @@ Develop practical Linux and infrastructure administration skills.
 
 Expand into automation, cloud infrastructure, and DevOps.
 
-**2. Physical Network Architecture**
+## **2. Physical Network Architecture**
 
 Network topology
 
@@ -47,7 +47,7 @@ The physical network follows this topology:
           |                     |
      Containers                VMs
 
-**3. VLAN Configuration**
+## **3. VLAN Configuration**
 
 The connection between the physical network switch and Proxmox server operates as a VLAN trunk.
 
