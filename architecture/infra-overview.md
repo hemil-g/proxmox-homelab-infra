@@ -1,6 +1,6 @@
 # Homelab Infrastructure – Architecture Overview
 
-**1. Project Overview**
+##**1. Project Overview**
 
 This project documents my personal homelab infrastructure, built to gain hands-on experience in network engineering, cybersecurity, virtualization, Linux administration, containerization, and self-hosted services.
 
