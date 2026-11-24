@@ -56,4 +56,22 @@ This provides logical network separation between workloads while using shared ph
 
 The VLAN configuration and associated network policies will be documented separately.
 
+## **7. Future Improvements**
+
+The homelab will continue evolving as new technologies and infrastructure projects are introduced.
+
+Planned improvements include:
+
+Infrastructure monitoring and alerting.
+
+Improved storage backup and recovery.
+
+Infrastructure automation
+
+CI/CD pipelines using GitHub Actions.
+
+Cloud infrastructure experimentation with Azure and AWS.
+
+Security hardening and vulnerability management.
+
 
