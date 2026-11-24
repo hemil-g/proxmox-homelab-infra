@@ -1,4 +1,4 @@
-**Homelab Infrastructure – Architecture Overview**
+# Homelab Infrastructure – Architecture Overview
 
 **1. Project Overview**
 
@@ -56,3 +56,5 @@ Multiple VLANs are carried across this connection, allowing different virtual ma
 This provides logical network separation between workloads while using shared physical infrastructure.
 
 The VLAN configuration and associated network policies will be documented separately.
+
+
