@@ -14,11 +14,14 @@ TurnKey File Server runs as an LXC container on Proxmox VE.
 
 Storage is provisioned and managed at the Proxmox level, then exposed to the container through an LXC mount point:
 
-- **Container:** TurnKey File Server (CT 103)
+- **Container:** TurnKey File Server
 - **Storage mount point:** `/mnt/smb-share`
 - **File sharing protocol:** SMB/CIFS
 - **Share name:** `NAS`
 - **Access management:** Role-based access control (RBAC)
+
+  <img width="1138" height="343" alt="image" src="https://github.com/user-attachments/assets/08082305-e965-4e03-b76b-725ecbda61bf" />
+
 
 ## Storage Design
 
