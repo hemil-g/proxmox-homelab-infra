@@ -14,20 +14,31 @@ TurnKey File Server runs as an LXC container on Proxmox VE.
 
 Storage is provisioned and managed at the Proxmox level, then exposed to the container through an LXC mount point:
 
-- **Container:** TurnKey File Server
+- **Container:** TurnKey-FS
 - **Storage mount point:** `/mnt/smb-share`
 - **File sharing protocol:** SMB/CIFS
-- **Share name:** `NAS`
 - **Access management:** Role-based access control (RBAC)
+  
+A Proxmox-managed storage volume is mapped into the LXC container using a mount point. This allows the file server to provide network-accessible storage without requiring the storage volume to be independently managed inside the container.
 
   <img width="1138" height="343" alt="image" src="https://github.com/user-attachments/assets/08082305-e965-4e03-b76b-725ecbda61bf" />
 
 
 ## Storage Design
 
-A Proxmox-managed storage volume is mapped into the LXC container using a mount point. This allows the file server to provide network-accessible storage without requiring the storage volume to be independently managed inside the container.
+- ### NAS-HDD is completely dedicated for SMB share managed through Fileserver. 
 
-The Samba service exposes the storage through the `NAS` network share.
+<img width="1008" height="334" alt="image" src="https://github.com/user-attachments/assets/14ee230a-1a38-4243-b5db-60d0c96b33fa" />
+
+
+<img width="945" height="213" alt="image" src="https://github.com/user-attachments/assets/b2394619-f4bd-428c-82ad-6cd47b0b05a3" />
+
+- ### The Samba service exposes the storage through the `NAS` network share.
+
+<img width="1651" height="732" alt="image" src="https://github.com/user-attachments/assets/aaf68b0f-02ce-4a1b-ac24-4ad9fbcab96c" />
+
+
+
 
 ## Access Management
 
