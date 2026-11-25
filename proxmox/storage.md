@@ -11,3 +11,6 @@ The storage infrastructure uses internal and external HDD storage, alongside SSD
 | local,local-lvm | **local** disk use to store and manage ISO images, Docker images, backups and snapshots. **local-lvm** configured as lvm-thin for deployment requiring on-demand allocation 
 
 The storage configuration is designed to separate application data from virtual machine storage and improve workload organization.
+
+<img width="702" height="512" alt="image" src="https://github.com/user-attachments/assets/1828f374-a1ae-4aa6-886e-fb49a01f37c3" />
+
