@@ -26,7 +26,7 @@ A Proxmox-managed storage volume is mapped into the LXC container using a mount 
 
 ## Storage Design
 
-- ### NAS-HDD is completely dedicated for SMB share managed through Fileserver. 
+- ### NAS-HDD is completely dedicated for SMB share managed through Fileserver. (refer to [storage](/storage))
 
 <img width="1008" height="334" alt="image" src="https://github.com/user-attachments/assets/14ee230a-1a38-4243-b5db-60d0c96b33fa" />
 
