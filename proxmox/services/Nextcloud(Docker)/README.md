@@ -68,7 +68,7 @@ Storage is provisioned separately from the application containers to maintain pe
 The deployment uses dedicated physical storage allocation for the virtual machine and Nextcloud data:
 
 - **External HDD:** Used for virtual machine storage.
-- **Internal HDD:** Dedicated storage for Nextcloud application data.
+- **NAS-HDD:** Dedicated storage for Nextcloud application data. The SMB-share configured using [Turnkey-FS](Turnkey-Fileserver(LXC).md)
 
 This separation distinguishes virtual machine infrastructure storage from user-generated application data.
 
