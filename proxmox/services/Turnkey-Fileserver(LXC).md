@@ -45,7 +45,16 @@ A Proxmox-managed storage volume is mapped into the LXC container using a mount 
 
 ## Access Management
 
-The NAS provides shared storage infrastructure across the homelab.
+The NAS provides shared storage infrastructure across the infra.
+
+Windows:
+<img width="1035" height="591" alt="image" src="https://github.com/user-attachments/assets/61b1f060-c2e2-45e2-a164-61ff0835f163" />
+
+      Linux:
+<img width="749" height="552" alt="image" src="https://github.com/user-attachments/assets/6dfa1ebc-8fe1-4253-9b9b-4f1c71e6ad2a" />
+
+Nextcloud(Private cloud)
+<img width="1343" height="797" alt="image" src="https://github.com/user-attachments/assets/38532c05-b2dc-4df7-9a5d-cbe8b9fc46b3" />
 
 Access is governed through role-based access control (RBAC), ensuring that storage access is managed according to authorized users and their assigned permissions.
 
