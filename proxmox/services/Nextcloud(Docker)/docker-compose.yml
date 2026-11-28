@@ -1,0 +1,66 @@
+services:
+  db:
+    image: postgres:18-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: nextcloud
+      POSTGRES_USER: abc
+      POSTGRES_PASSWORD: abc
+    volumes:
+      - ./postgres:/var/lib/postgresql
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U nextcloud -d nextcloud
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  redis:
+    image: redis:8-alpine
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    volumes:
+      - ./redis:/data
+  nextcloud:
+    image: nextcloud:apache
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_DB: nextcloud
+      POSTGRES_USER: abc
+      POSTGRES_PASSWORD: abc
+      REDIS_HOST: redis
+      NEXTCLOUD_ADMIN_USER: abc
+      NEXTCLOUD_ADMIN_PASSWORD: abc
+    volumes:
+      - ./nextcloud:/var/www/html
+      - /mnt/smb:/mnt/nas 
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - -f
+        - http://localhost/status.php
+      interval: 30s
+      timeout: 10s
+      retries: 5
+  cron:
+    image: nextcloud:apache
+    restart: unless-stopped
+    volumes:
+      - ./nextcloud:/var/www/html
+      - /mnt/smb:/mnt/nas
+    entrypoint: /cron.sh
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+networks: {}
