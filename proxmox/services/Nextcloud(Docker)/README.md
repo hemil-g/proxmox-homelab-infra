@@ -19,8 +19,6 @@ The deployment follows a multi-layer architecture:
 5. **Persistent Storage:** Maintains application data independently of container lifecycles.
 6. **FortiGate Firewall:** Provides external connectivity through configured port forwarding.
 
-![Nextcloud infrastructure architecture](./assets/architecture.png)
-
 ## Deployment Configuration
 
 | Component | Configuration |
@@ -45,8 +43,6 @@ The Nextcloud deployment consists of four primary services:
 - **Redis:** Caching and transactional file-locking support.
 - **Cron:** Dedicated background-job container for scheduled Nextcloud maintenance tasks.
 
-![Nextcloud Docker containers](./assets/docker-containers.png)
-
 ## Docker Stack Management – Dockge
 
 Dockge is deployed as a Docker Compose management interface on the Ubuntu Server VM.
@@ -59,8 +55,6 @@ The management interface simplifies day-to-day administration while retaining Do
 
 **Stack directory:** `/opt/docker-stacks`
 
-![Dockge dashboard showing Docker Compose stacks](./assets/dockge-dashboard.png)
-
 ## Storage Architecture
 
 Storage is provisioned separately from the application containers to maintain persistent data across container lifecycle operations.
@@ -72,7 +66,6 @@ The deployment uses dedicated physical storage allocation for the virtual machin
 
 This separation distinguishes virtual machine infrastructure storage from user-generated application data.
 
-![Proxmox virtual machine storage configuration](./assets/storage-configuration.png)
 
 ## Remote Accessibility
 
@@ -83,8 +76,6 @@ Nextcloud is accessible remotely through a FortiDDNS hostname using FortiGate po
 The deployment uses direct firewall port forwarding witht a dedicated reverse-proxy deployment using nginx reverse proxy manager.
 
 Nextcloud's external hostname and protocol settings are configured to support access through the external endpoint.
-
-![Nextcloud remote access architecture](./assets/remote-access-flow.png)
 
 ## Deployment Management
 
