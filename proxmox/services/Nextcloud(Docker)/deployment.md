@@ -148,7 +148,7 @@ Inspect the Compose configuration:
 
 <img width="1803" height="1030" alt="image" src="https://github.com/user-attachments/assets/b097ea33-c6c8-4b41-9763-86c92008ee60" />
 
-Check [docker-compose.yml](/docker-compose.yml) file for Nextcloud stack.
+Check [docker-compose.yml](https://github.com/hemil-g/proxmox-infra/blob/main/proxmox/services/Nextcloud(Docker)/docker-compose.yml) file for Nextcloud stack.
 
 ## 05. Application Verification
 
