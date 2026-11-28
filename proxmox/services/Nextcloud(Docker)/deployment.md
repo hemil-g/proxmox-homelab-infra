@@ -192,3 +192,30 @@ Nextcloud is exposed through the configured FortiGate port-forwarding arrangemen
 
 <img width="1891" height="706" alt="image" src="https://github.com/user-attachments/assets/af981d99-f476-4a84-9999-d0035830d3db" />
 
+NGINX is also hosted on same Ubuntu server as a docker container
+
+```bash
+nightcrawler@ubuntu:/$ sudo docker ps | grep nginx
+52e2258b6733   jc21/nginx-proxy-manager:2.15.1   "/init"                  3 months ago   Up 39 minutes           0.0.0.0:80-81->80-81/tcp, [::]:80-81->80-81/tcp, 0.0.0.0:443->443/tcp, [::]:443->443/tcp   nginx-reverseproxy-npm-1
+nightcrawler@ubuntu:/$ ^C
+```
+<img width="1285" height="834" alt="image" src="https://github.com/user-attachments/assets/27160e30-745f-4813-916c-38eeb19da94d" />
+
+
+LetsEncrypt Certificate is created on Nginx:
+
+<img width="1760" height="908" alt="image" src="https://github.com/user-attachments/assets/0550a1ac-cb9f-4c48-be2e-40356169a573" />
+
+
+
+Further the certificate is used for reverse proxy of nextcloud:
+
+<img width="1718" height="641" alt="image" src="https://github.com/user-attachments/assets/8dd24942-1319-43df-a2d2-742588cc290b" />
+
+<img width="1781" height="781" alt="image" src="https://github.com/user-attachments/assets/5649cfa4-d906-493a-81bf-97cf2f765150" />
+
+<img width="1434" height="910" alt="image" src="https://github.com/user-attachments/assets/6e463955-959c-494c-b65f-72652b13461c" />
+
+
+
+
