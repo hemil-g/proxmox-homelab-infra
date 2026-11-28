@@ -8,6 +8,9 @@ Deployed TurnKey File Server as a centralized network storage service within my 
 
 The service provides shared storage over SMB/CIFS, allowing infrastructure components and authorized systems to access centralized data through a common network share.
 
+<img width="796" height="489" alt="image" src="https://github.com/user-attachments/assets/41612a53-5ff7-4bb2-9362-da7d7713a32f" />
+
+
 ## Architecture
 
 TurnKey File Server runs as an LXC container on Proxmox VE.
