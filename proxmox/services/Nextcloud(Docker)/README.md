@@ -57,7 +57,7 @@ The management interface simplifies day-to-day administration while retaining Do
 
 **Dockge deployment directory:** `/opt/docker-data/dockage`
 
-**Stack directory:** `/opt/docker-stacks/stacks`
+**Stack directory:** `/opt/docker-stacks`
 
 ![Dockge dashboard showing Docker Compose stacks](./assets/dockge-dashboard.png)
 
